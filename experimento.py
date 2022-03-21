@@ -1,7 +1,7 @@
 import math
 from matplotlib import pyplot as plt
-import numeros_complejos
 import Matrices_Vectores
+import numeros_complejos
 
 
 """
@@ -9,6 +9,21 @@ El salto de lo clasico a lo cuantico - CNYT
 POR: Andrea Valentina y carolina medina
 Fecha: 14/03/2021
 """
+
+
+""" Funcion del esperimento del las canicas en donce recibe la matriz de adyacencia, el vector estado y el numero de clicks """
+
+def Canicas (matriz, vector_col, clicks):
+    resultado = productoMatrices(matriz, vector_col)
+    if clicks == 0:
+        return matriz
+    if clicks > 0:
+        for i in range(clicks-1 ):
+            resultado = productoMatrices(matriz, resultado)
+
+    return resultado
+
+
 
 
 """
@@ -52,7 +67,7 @@ def multiplesrendijasC(rendijas, blancos, clicks):
         vectorCol = Matrices_Vectores.productoMatricesComp(matrizResultado, vectorCol)
         for i in range(len(vectorCol)):
             for j in range(1):
-                vectorResultado.append(numeros_complejos.moduloComplejos(vectorCol[i][j])**2)
+                vectorResultado.append(numeros_complejos.moduloCplx(vectorCol[i][j])**2)
 
         return matrizResultado, vectorResultado
 
@@ -84,9 +99,31 @@ def imprimirVector(vector):
         print(i)
     print()
 
-if __name__ == '__main__':
 
-    tupla = multiplesrendijasC(2, 5, 1)
+
+def main():
+    #Los experimentos de la canicas con coeficiente booleanos
+    a = [[0, 1,0], [1, 0,1], [1, 0,1]]
+    b = [[1], [0],[1]]
+    print(Canicas(a,b,2))
+
+    #Experimentos de las múltiples rendijas clásico probabilístico, con más de dos rendijas.
+
+    tupla=multiplesrendijasR(3,5,0)
     imprimirMatriz(tupla[0])
-    print(tupla[1])
+    imprimirMatriz(tupla[1])
 
+
+
+    #Experimento de las múltiples rendijas cuántico.
+
+    tupla2=multiplesrendijasC(2,5,1)
+    imprimirMatriz(tupla2[0])
+    print(tupla2[1])
+
+
+    #Cree una función para graficar con un diagrama de barras que muestre las probabilidades de un vector de estados. La imagen se debe poder guardar en el computador con un formato de imagen.
+    graficarEstados(tupla2[1])
+
+if __name__ == '__main__':
+    main()
