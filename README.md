@@ -6,7 +6,7 @@ El experimento de la doble rendija fue realizado por primera vez por el científ
 Superposición: El estado de un sistema puede contener múltiples historias.
 Interferencia: Las historias de los sistemas pueden interactuar entre sí.
 
-![img_5.png](img_5.png)
+![img_5.png](C:\Users\andre\OneDrive\Escritorio\proyecto\imagenes\img_5.png)
 ![img_6.png](img_6.png)
 
 El experimento de la doble rendija lo realizamos de la siguiente manera:
