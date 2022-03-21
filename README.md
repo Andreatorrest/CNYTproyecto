@@ -75,6 +75,30 @@ La grafica del vector de estados del experimento probabilístico resulta:
 
 ![img_17.png](img_17.png)
 
+![](imagenes/img18.png)
+
+Simulación Cuántica:
+
+la representación de un número complejo está dada por una tupla, en la cual el primer valor en la posición 0 es  la parte real del número y la segunda parte es la parte imaginaria del número.
+
+La matriz y el vector de estados inicial de la simulación cuántica resultan de la siguiente forma:
+
+![](imagenes/img_19.png)
+
+![](imagenes/img_20.png)
+
+Después de un clic resulta:
+
+![](imagenes/img_21.png)
+
+![](imagenes/img_22.png)
+
+La grafica estado resulta:
+
+![](imagenes/img_23.png)
+
+![](imagenes/img_24.png)
+
 Explicación:
 
 Cuando un fotón pasa por el experimento de doble rendija no se divide, sino que toma varias historias, en nuestros sistemas determinísticos, probabilísticos y cuánticos realizados en las librerías podemos observar que las probabilidades nos dan una medida de proporción de universos en los que el fotón toma cada uno de los valores siguiendo un mismo patrón, demostrándonos que existe un multiverso. Por otro parte las rayitas de interferencia que se forman se pueden explicar porque en el momento que pasa por la doble rendija las historias de ese fotón interfieren entre si provocando que se anulen.
